@@ -6,7 +6,7 @@ setup(
     description = 'ASC was made to be a fast and accurate way of calculating square root. It is 100% accurate and has no size limit.', 
     py_modules = ["ASqrtC"],
     package_dir = {'':'src'},
-    packages = ['ASqrtC'],
+    packages = ['ASqrtC.py'],
     author = 'Sebastian Trumbore',
     author_email = 'Trumbore.Sebastian@gmail.com',
     long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
