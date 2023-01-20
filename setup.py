@@ -11,10 +11,7 @@ setup(
     author_email = 'Trumbore.Sebastian@gmail.com',
     long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
     long_description_content_type = "text/markdown",
-    '''
-    The url to where your package is stored for public view. Normally, it will be the github url to the repository you just forked.
-    '''
-    url='https://github.com/jinhangjiang/morethansentiments',
+    url='https://github.com/SebastianTrumbore/ASqrtC',
     include_package_data=True,
     classifiers  = [
         'Development Status :: 4 - Beta',
