@@ -1,15 +1,11 @@
 from setuptools import setup
 
-######################################################################################################
-################ You May Remove All the Comments Once You Finish Modifying the Script ################
-######################################################################################################
-
 setup(
     '''
     This name will be used when people try to do pip install. And it is CASE SENSITIVE. 
     You should create an unique name. Search on pypi.org to see if the name is taken or not.
     '''
-    name = 'YourPackageName', 
+    name = 'ASqrtC', 
     
     '''
     The version number of your package consists of three integers "Major.Minor.Patch".
@@ -22,12 +18,12 @@ setup(
     '''
     This is the short description will show on the top of the webpage of your package on pypi.org
     '''
-    description = 'An NLP python package for computing Boilerplate score and many other text features.',
+    description = 'ASC was made to be a fast and accurate way of calculating square root. It is 100% accurate and has no size limit.',
     
     '''
     This is the name of your main module file. No need to include the .py at the end.
     '''    
-    py_modules = ["TheModuleName"],
+    py_modules = ["ASqrtC"],
     
     '''
     Leave it as default. It shows where the module is stored.
