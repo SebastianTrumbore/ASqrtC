@@ -9,7 +9,7 @@ setup(
    # packages = [''],
     author = 'Sebastian Trumbore',
     author_email = 'Trumbore.Sebastian@gmail.com',
-    long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
+    long_description = open('README.md').read(),
     long_description_content_type = "text/markdown",
     url='https://github.com/SebastianTrumbore/ASqrtC',
     include_package_data=True,
