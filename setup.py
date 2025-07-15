@@ -29,9 +29,7 @@ setup(
         'Operating System :: Microsoft :: Windows',
         'Operating System :: OS Independent',
     ],
-    install_requires = [
-        'pandas ~= 1.2.4'
-    ],
+    install_requires = [],
     keywords = ['Square Root', 'Data Science', 'Exact', 'Sqrt', 'Accurate'],
     
 )
