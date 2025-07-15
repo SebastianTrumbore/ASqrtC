@@ -1,7 +1,6 @@
 __author__='Sebastian Trumbore'
 __author_email__='Trumbore.Sebastian@gmail.com'
 
-import math
 
 def sqrt(number, decimal_length=2):
     try:
@@ -18,7 +17,7 @@ def sqrt(number, decimal_length=2):
         elif len(str(number)) % 2 == 0 and "." in str(number):
             broken_number.append(str(number)[i])
             i += 1
-        j = math.ceil(len(str(number)) - i / 2)
+        j = int(-(- (len(str(number)) - i / 2) // 1))
         for counter in range(int(j)):
             if not len(str(number)) < i + 1:
                 if "." in str(number)[i] + str(number)[i + 1]:
