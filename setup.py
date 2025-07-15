@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = 'ASqrtC', 
-    version = '1.0.0',
+    version = '1.0.1',
     description = 'ASC was made to be a fast and accurate way of calculating square root. It is 100% accurate and has no size limit.', 
     py_modules = ["ASqrtC"],
     package_dir = {'':'src'},
