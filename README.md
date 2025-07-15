@@ -1,5 +1,5 @@
 # Accurate-Sqrt-Calculator (ASqrtC)
-ASC was made to be a fast and accurate way of calculating square root.
-It is 100% accurate and has no size limit.
-Which means you could accurately calculate the square root of 2 to the thousandth digit.
+ASqrtC is a fast and accurate square root calculator with no size limit.
+It delivers exact results to any specified number of decimal places.
+ASqrtC outperforms Python’s built-in math and decimal modules in both speed and accuracy for large and high-precision calculations.
 Note: This project does NOT work with negative, imaginary, and complex numbers.
