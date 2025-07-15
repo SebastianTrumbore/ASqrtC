@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='ASqrtC',
-    version='2.0.1',
+    version='2.1.1',
     description=
     ('ASqrtC is a fast and accurate square root calculator with no size limit. '
      'It delivers exact results to any specified number of decimal places. '
