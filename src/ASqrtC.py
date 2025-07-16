@@ -2,16 +2,34 @@ __author__='Sebastian Trumbore'
 __author_email__='Trumbore.Sebastian@gmail.com'
 
 
+def find_largest_I(q2, number_int):
+    a = q2 * 10
+    # Predict I Using Simple Estimation (Linear)
+    I = (number_int // (a + 1))  # Prevent Division By 0
+    if I > 9:
+        I = 9
+
+    # Check Downard First, Overshoot Is Unlikely
+    while I > 0 and (a + I) * I > number_int:
+        I -= 1
+
+    # Insurance Upward Check (Max 1 Step)
+    while I < 9 and (a + I + 1) * (I + 1) <= number_int:
+        I += 1
+
+    return I
+
+
 def sqrt(number, decimal_length=2):
-    # Check if input is numeric
+    # Check If Input Is Numeric
     if not isinstance(number, (int, float)):
-        raise TypeError("\033[0;31mError: Input must be a number.")
+        raise TypeError("Error: Input must be a number.")
 
-    # Check for negative values
+    # Check For Negative Values
     if number < 0:
-        raise ValueError("\033[0;31mError: Number must be non-negative.")
+        raise ValueError("Error: Number must be non-negative.")
 
-    # Sqrt calculations
+    # Sqrt Calculations
     i = 0
     j = 0
     broken_number = []
@@ -48,11 +66,8 @@ def sqrt(number, decimal_length=2):
             else:
                 number_int = int(str(number_int) + broken_number[counter])
 
-            I = 0
-            while int(str(q2) + str(I)) * I <= number_int:
-                I += 1
-            I -= 1
-            number_int -= int(str(q2) + str(I)) * I
+            I = find_largest_I(q2, number_int)
+            number_int -= (q2 * 10 + I) * I
             q2 = int(q2) * 10 + I * 2
             q += str(I)
 
