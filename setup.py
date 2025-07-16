@@ -2,12 +2,12 @@ from setuptools import setup
 
 setup(
     name='ASqrtC',
-    version='3.0.1',
+    version='3.1.1',
     description=
     (
      'ASqrtC is a fast square root calculator with 100% accuracy. '
      'It delivers exact results to any specified number of decimal places. '
-     'ASqrtC outperforms Python’s built-in math and decimal modules in speed when calculating less then ~7500 decimal places.'
+     'ASqrtC outperforms Python’s built-in math and decimal modules in speed when calculating less then ~5000 decimal places.'
     ),
     py_modules=["ASqrtC"],
     package_dir={'': 'src'},
