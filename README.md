@@ -2,7 +2,7 @@
 ASqrtC is a fast and accurate square root calculator with no size limit.
 It delivers exact results to any specified number of decimal places.
 It is 100% accurate.
-ASqrtC outperforms Python’s built-in math and decimal modules in speed when calculating less then ~7500 decimal places.
+ASqrtC outperforms Python’s built-in math and decimal modules in speed when calculating less then ~5000 decimal places.
 
 **How to Use**
 1. Install the package using pip.
